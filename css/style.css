@@ -1,0 +1,141 @@
+:root{
+/* ### Primary */
+--Green: hsl(158, 36%, 37%);
+--Green7: hsl(158, 42%, 18%);
+/* ### Neutral */
+--Black: hsl(212, 21%, 14%);
+--Grey: hsl(228, 12%, 48%);
+--Cream: hsl(30, 38%, 92%);
+--White: hsl(0, 0%, 100%);
+
+--font1:   font-family: "Montserrat", sans-serif;
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+      font-family: "Fraunces", serif;
+      background-color: rgb(255, 245, 231);
+}
+
+.container{
+    width: 90%;
+    margin: 70px auto;
+        max-width: 375px;
+
+    background-color: var(--White);
+    border-radius: 1em;
+}
+
+/* .card{
+    height: 750px;
+} */
+
+.img{
+    width: 100%;
+    border-radius: 1em 1em 0 0;
+}
+
+.info{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.uptitle{
+    color: var(--Grey);
+    margin-top: 20px;
+    font-family: "Montserrat";
+    letter-spacing: 5px;
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+
+.title{
+    color: var(--Black);
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+.paragraph{
+    font-family: "Montserrat";
+    margin-top: 20px;
+    font-size: .9rem;
+    color: var(--Grey);
+}
+
+.prices{
+    display: flex;
+    margin-top: 20px;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.price{
+    color: var(--Green);
+    font-size: 2rem;
+}
+.price2{
+    color: var(--Grey);
+    font-size: .8rem;
+    text-decoration: line-through;
+}
+
+.buton{
+    text-decoration: none;
+    color: var(--White);
+    background-color: var(--Green);
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: .8em 0;
+    border-radius: 10px;
+}
+/* ----------------------------------------------------------------- */
+@media (min-width:768px){
+
+    .container{
+    width: 90%;
+    max-width: 600px;
+    margin: 70px auto;
+    background-color: var(--White);
+    border-radius: 1em;
+}
+
+    .card{
+    height: unset;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+}
+
+.img{
+    width: 100%;
+    border-radius: 1em 0 0 1em;
+}
+
+.info{
+    width: 80%;
+    margin-right: 15px;
+    margin-top: 30px;
+}
+
+.buton{
+    width: 70%;
+    margin: 40px auto;
+    display: block;
+    
+}
+
+.img{
+    content: url(../images/image-product-desktop.jpg);
+    width: 100%;
+}
+
+    
+}
